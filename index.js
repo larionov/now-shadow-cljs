@@ -114,7 +114,7 @@ exports.build = async ({ files, entrypoint, workPath } = {}) => {
 
   console.log(stdout);
 
-  await installJava();
+//  await installJava();
   await installDependencies(downloadedFiles, workPath);
 
   const input = downloadedFiles[entrypoint].fsPath;
