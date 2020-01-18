@@ -1,6 +1,6 @@
 {
   "name": "@sergeylarionov/now-shadow-cljs",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "description": "A now builder for ClojureScript projects using shadow-cljs",
   "repository": {
