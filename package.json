@@ -1,11 +1,11 @@
 {
-  "name": "@jntn/now-shadow-cljs",
+  "name": "@sergeylarionov/now-shadow-cljs",
   "version": "1.0.0",
   "license": "MIT",
   "description": "A now builder for ClojureScript projects using shadow-cljs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jntn/now-shadow-cljs.git"
+    "url": "https://github.com/lariono/vnow-shadow-cljs.git"
   },
   "files": [
     "index.js",
@@ -19,7 +19,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@now/node-bridge": "^0.1.11-canary.0",
+    "@now/node-bridge": "^1.2.7-canary.1",
     "execa": "^1.0.0",
     "fs-extra": "7.0.1",
     "jsedn": "^0.4.1",

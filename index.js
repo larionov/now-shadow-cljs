@@ -80,7 +80,7 @@ async function createLambdaForNode(buildConfig, lambdas, workPath) {
   const lambda = await createLambda({
     files: { ...preparedFiles },
     handler: 'launcher.launcher',
-    runtime: 'nodejs12.0'
+    runtime: 'nodejs10.0'
   });
 
   lambdas[buildConfig.outputTo] = lambda;
