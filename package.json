@@ -5,7 +5,7 @@
   "description": "A now builder for ClojureScript projects using shadow-cljs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lariono/vnow-shadow-cljs.git"
+    "url": "https://github.com/larionov/now-shadow-cljs.git"
   },
   "files": [
     "index.js",
