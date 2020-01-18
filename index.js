@@ -19,7 +19,7 @@ const fetch = require('node-fetch');
 const parseConfigFile = require('./parse-config-file');
 
 //const javaUrl = 'https://d2znqt9b1bc64u.cloudfront.net/amazon-corretto-8.202.08.2-linux-x64.tar.gz';
-const javaUrl = 'https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz';
+const javaUrl = 'https://corretto.aws/downloads/resources/8.242.07.1/amazon-corretto-8.242.07.1-linux-x64.tar.gz';
 async function installJava() {
   console.log('Downloading java...');
   const res = await fetch(javaUrl);
@@ -123,8 +123,8 @@ exports.build = async ({ files, entrypoint, workPath } = {}) => {
   try {
     await execa('npx', ['shadow-cljs', 'release', ...buildConfigs.map(b => b.name)], {
       env: {
-        JAVA_HOME: `${HOME}/amazon-corretto-8.202.08.2-linux-x64`,
-        PATH: `${PATH}:${HOME}/amazon-corretto-8.202.08.2-linux-x64/bin`,
+        JAVA_HOME: `${HOME}/amazon-corretto-8.242.07.1-linux-x64`,
+        PATH: `${PATH}:${HOME}/amazon-corretto-8.242.07.1-linux-x64/bin`,
         M2: `${workPath}.m2`
       },
       cwd: workPath,
